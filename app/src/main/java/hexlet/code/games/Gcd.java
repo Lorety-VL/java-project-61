@@ -8,8 +8,8 @@ public class Gcd {
     private static final int MAX_NUMBER = 50;
 
     public static String[] makeStep() {
-        var randomNum1 = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
-        var randomNum2 = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
+        int randomNum1 = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
+        int randomNum2 = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
 
         String question = "Question: " + randomNum1 + " " + randomNum2;
         String correctAnswer = String.valueOf(getGcd(randomNum1, randomNum2));

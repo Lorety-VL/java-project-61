@@ -11,7 +11,7 @@ public class Calc {
         int firstOperand = GameUtils.getRandomInt(MAX_OPERAND);
         int secondOperand = GameUtils.getRandomInt(MAX_OPERAND);
         String sign = SIGNS[GameUtils.getRandomInt(2)];
-        String question = firstOperand + sign + secondOperand;
+        String question = firstOperand + " " + sign + " " + secondOperand;
         String correctAnswer = switch (sign) {
             case "+" -> String.valueOf(firstOperand + secondOperand);
             case "-" -> String.valueOf(firstOperand - secondOperand);

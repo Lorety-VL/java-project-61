@@ -4,9 +4,11 @@ import hexlet.code.GameUtils;
 
 public class Even {
     private static final String RULES = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    private static final int MIN_NUMBER = 2;
+    private static final int MAX_NUMBER = 100;
 
     public static String[] makeStep() {
-        var randomInt = GameUtils.getRandomInt(2, 100);
+        int randomInt = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
         String question = "Question: " + randomInt;
         String correctAnswer = randomInt % 2 == 0 ? "yes" : "no";
         return new String[]{question, correctAnswer};

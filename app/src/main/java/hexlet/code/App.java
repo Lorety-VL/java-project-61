@@ -9,14 +9,16 @@ public class App {
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - Gcd");
+        System.out.println("5 - Progression");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
-        var sc = new Scanner(System.in);
-        var userChoice = sc.next();
+        Scanner sc = new Scanner(System.in);
+        String userChoice = sc.next();
         switch (userChoice) {
             case "2":
             case "3":
             case "4":
+            case "5":
                 Engine.startGame(userChoice);
                 break;
             case "1":
