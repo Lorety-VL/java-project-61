@@ -2,8 +2,6 @@ package hexlet.code.games;
 
 import hexlet.code.GameUtils;
 
-import java.util.Arrays;
-
 public class Progression {
     private static final String RULES = "What number is missing in the progression?";
     private static final int MIN_LENGTH = 5;
@@ -26,7 +24,7 @@ public class Progression {
         String correctAnswer = String.valueOf(progression[missingElementId]);
         progression[missingElementId] = "..";
 
-        String question = Arrays.toString(progression);
+        String question = String.join(" ", progression);
         return new String[]{question, correctAnswer};
     }
 
