@@ -2,6 +2,8 @@ package hexlet.code;
 
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
+import hexlet.code.games.Gcd;
+
 import java.util.Scanner;
 
 public class Engine {
@@ -32,6 +34,8 @@ public class Engine {
     public static String getRulesByGameId(int id) {
         if (id == 2) {
             return Even.getRules();
+        } else if (id == 4) {
+            return Gcd.getRules();
         } else {
             return Calc.getRules();
         }
@@ -39,6 +43,8 @@ public class Engine {
     public static String[] getGameDataByGameId(int gameId) {
         if (gameId == 2) {
             return Even.makeStep();
+        } else if (gameId == 4) {
+            return Gcd.makeStep();
         } else {
             return Calc.makeStep();
         }
