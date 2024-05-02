@@ -4,7 +4,7 @@ import hexlet.code.GameUtils;
 
 public class Prime {
     private static final String RULES = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-    private static final int MIN_NUMBER = 1;
+    private static final int MIN_NUMBER = 3;
     private static final int MAX_NUMBER = 100;
 
     public static String[] makeStep() {
