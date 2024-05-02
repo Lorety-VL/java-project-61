@@ -5,8 +5,10 @@
 ## Brain Even game example 
 [![asciicast](https://asciinema.org/a/ls95q374TyGxh3TxX80JCOyd5.svg)](https://asciinema.org/a/ls95q374TyGxh3TxX80JCOyd5)
 ## Brain Calc game example
-[![asciicast](https://asciinema.org/a/tuqtDI6QykaBnHTTfovIaEDuB.svg)](https://asciinema.org/a/tuqtDI6QykaBnHTTfovIaEDuB)
+[![asciicast](https://asciinema.org/a/BGD67fi1CQYAJBoH33dqzkDII.svg)](https://asciinema.org/a/BGD67fi1CQYAJBoH33dqzkDII)
 ## Brain Gcd game example
 [![asciicast](https://asciinema.org/a/GMg6BWFt0iKYkQEmt4HN34c4E.svg)](https://asciinema.org/a/GMg6BWFt0iKYkQEmt4HN34c4E)
 ## Brain Progression game example
 [![asciicast](https://asciinema.org/a/45YJiMRzGXj3F4QRqMvis5xQg.svg)](https://asciinema.org/a/45YJiMRzGXj3F4QRqMvis5xQg)
+## Brain Prime game example
+[![asciicast](https://asciinema.org/a/kRbzsiH3BUCWXKNlxo5aQKIyW.svg)](https://asciinema.org/a/kRbzsiH3BUCWXKNlxo5aQKIyW)

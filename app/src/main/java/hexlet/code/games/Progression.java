@@ -26,7 +26,7 @@ public class Progression {
         String correctAnswer = String.valueOf(progression[missingElementId]);
         progression[missingElementId] = "..";
 
-        String question = "Question: " + Arrays.toString(progression);
+        String question = Arrays.toString(progression);
         return new String[]{question, correctAnswer};
     }
 

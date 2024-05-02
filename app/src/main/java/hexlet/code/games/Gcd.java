@@ -11,7 +11,7 @@ public class Gcd {
         int randomNum1 = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
         int randomNum2 = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
 
-        String question = "Question: " + randomNum1 + " " + randomNum2;
+        String question = randomNum1 + " " + randomNum2;
         String correctAnswer = String.valueOf(getGcd(randomNum1, randomNum2));
         return new String[]{question, correctAnswer};
     }

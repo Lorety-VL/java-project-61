@@ -10,6 +10,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - Gcd");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
         Scanner sc = new Scanner(System.in);
@@ -19,6 +20,7 @@ public class App {
             case "3":
             case "4":
             case "5":
+            case "6":
                 Engine.startGame(userChoice);
                 break;
             case "1":

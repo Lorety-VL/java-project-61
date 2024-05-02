@@ -9,7 +9,7 @@ public class Even {
 
     public static String[] makeStep() {
         int randomInt = GameUtils.getRandomInt(MIN_NUMBER, MAX_NUMBER);
-        String question = "Question: " + randomInt;
+        String question = String.valueOf(randomInt);
         String correctAnswer = randomInt % 2 == 0 ? "yes" : "no";
         return new String[]{question, correctAnswer};
     }

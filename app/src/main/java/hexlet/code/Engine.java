@@ -4,6 +4,7 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -18,7 +19,7 @@ public class Engine {
         System.out.println(rules);
         for (int i = 0; i < ROUNDS_COUNT; i++) {
             var gameData = getGameDataByGameId(Integer.parseInt(gameId));
-            String question = gameData[0];
+            String question = "question: " + gameData[0];
             String correctAnswer = gameData[1];
             System.out.println(question + "\nYour answer: ");
             String userAnswer = sc.next();
@@ -37,10 +38,12 @@ public class Engine {
             return Even.getRules();
         } else if (id == 3) {
             return Calc.getRules();
-        }  else if (id == 4) {
+        } else if (id == 4) {
             return Gcd.getRules();
-        } else {
+        } else if (id == 5) {
             return Progression.getRules();
+        } else {
+            return Prime.getRules();
         }
     }
     public static String[] getGameDataByGameId(int gameId) {
@@ -50,8 +53,10 @@ public class Engine {
             return Calc.makeStep();
         } else if (gameId == 4) {
             return Gcd.makeStep();
-        } else {
+        } else if (gameId == 5) {
             return Progression.makeStep();
+        } else {
+            return Prime.makeStep();
         }
     }
 }
