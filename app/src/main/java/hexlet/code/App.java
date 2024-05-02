@@ -26,7 +26,6 @@ public class App {
             case "1":
                 Cli.greeting();
                 break;
-            case "0":
             default:
                 break;
         }

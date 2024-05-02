@@ -14,11 +14,11 @@ public class Engine {
         System.out.println("Welcome to the Brain Games!\nMay I have your name? ");
         var sc = new Scanner(System.in);
         String name = sc.next();
-        String rules = getRulesByGameId(Integer.parseInt(gameId));
+        String rules = getRulesByGameId(gameId);
         System.out.println("Hello, " + name + "!");
         System.out.println(rules);
         for (int i = 0; i < ROUNDS_COUNT; i++) {
-            var gameData = getGameDataByGameId(Integer.parseInt(gameId));
+            var gameData = getGameDataByGameId(gameId);
             String question = "question: " + gameData[0];
             String correctAnswer = gameData[1];
             System.out.println(question + "\nYour answer: ");
@@ -33,30 +33,22 @@ public class Engine {
         }
         System.out.println("Congratulations, " + name + "!");
     }
-    public static String getRulesByGameId(int id) {
-        if (id == 2) {
-            return Even.getRules();
-        } else if (id == 3) {
-            return Calc.getRules();
-        } else if (id == 4) {
-            return Gcd.getRules();
-        } else if (id == 5) {
-            return Progression.getRules();
-        } else {
-            return Prime.getRules();
-        }
+    public static String getRulesByGameId(String gameId) {
+        return switch (gameId) {
+            case "2" -> Even.getRules();
+            case "3" -> Calc.getRules();
+            case "4" -> Gcd.getRules();
+            case "5" -> Progression.getRules();
+            default -> Prime.getRules();
+        };
     }
-    public static String[] getGameDataByGameId(int gameId) {
-        if (gameId == 2) {
-            return Even.makeStep();
-        } else if (gameId == 3) {
-            return Calc.makeStep();
-        } else if (gameId == 4) {
-            return Gcd.makeStep();
-        } else if (gameId == 5) {
-            return Progression.makeStep();
-        } else {
-            return Prime.makeStep();
-        }
+    public static String[] getGameDataByGameId(String gameId) {
+        return switch (gameId) {
+            case "2" -> Even.makeStep();
+            case "3" -> Calc.makeStep();
+            case "4" -> Gcd.makeStep();
+            case "5" -> Progression.makeStep();
+            default -> Prime.makeStep();
+        };
     }
 }
