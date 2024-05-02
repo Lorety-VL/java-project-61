@@ -19,7 +19,7 @@ public class Engine {
         System.out.println(rules);
         for (int i = 0; i < ROUNDS_COUNT; i++) {
             var gameData = getGameDataByGameId(gameId);
-            String question = "question: " + gameData[0];
+            String question = "Question: " + gameData[0];
             String correctAnswer = gameData[1];
             System.out.println(question + "\nYour answer: ");
             String userAnswer = sc.next();
